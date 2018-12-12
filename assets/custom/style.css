@@ -1,0 +1,42 @@
+.main-panel {
+	width: 100%;
+}
+
+.navbar.default-layout .navbar-brand-wrapper .brand-logo .brand-teks {
+	display:inline;
+	font-family: Passion One;
+	font-size: 2.5rem;
+	line-height: 15pt;
+	padding: 8px;
+	background: -webkit-linear-gradient(#00e4d0, #5983e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links {
+    padding-left: 0;
+}
+
+
+.card-title {
+	font-size: 20px
+}
+
+span#currentDate {
+	font-size: 18px;
+}
+
+span#currentDate2 {
+	font-size: 12px;
+	font-weight: Bold;
+}
+
+span#currentTime {
+	font-size: 60px;
+}
+
+@media (max-width: 991px)
+.navbar.default-layout .navbar-menu-wrapper {
+    width: 90%;
+}
