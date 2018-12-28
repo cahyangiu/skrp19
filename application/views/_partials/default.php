@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/vendors/css/vendor.bundle.addons.css">
   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/vendors/iconfonts/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/custom/font.css">
+  <script src="<?php echo base_url('assets') ?>/custom/js/config.js"></script>
   <!-- endinject -->
   <!-- plugin css for this page -->
 
@@ -26,7 +27,7 @@
   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/style.css">
   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/custom/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="<?php echo base_url('assets') ?>/images/favicon.png" />
+  <link rel="shortcut icon" href="<?php echo base_url('assets') ?>/images/logo-tirta.png" />
 </head>
 
 <body>

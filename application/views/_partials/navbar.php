@@ -13,6 +13,7 @@
 
 	</div>
 	<div class="navbar-menu-wrapper d-flex align-items-center">
+		<?php if($this->session->userdata('logged')): ?>
 		<ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
 			<li class="nav-item active">
 				<a href="#" class="nav-link">
@@ -32,11 +33,11 @@
 		<ul class="navbar-nav navbar-nav-right">
 			<li class="nav-item dropdown d-none d-xl-inline-block">
 				<a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-					<span class="profile-text">Halo, Cahya Ngiu !</span>
+					<span class="profile-text">Halo, <?php echo $this->session->userdata('fullname') ?>!</span>
 					<img class="img-xs rounded-circle" src="<?php echo base_url('assets') ?>/images/faces/cahya.jpg" alt="Profile image">
 				</a>
 				<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-					<a class="dropdown-item mt-2">
+					<a class="dropdown-item mt-2" href="<?php echo base_url('user') ?>">
 						Manajemen Akun
 					</a>
 					<a class="dropdown-item">
@@ -45,12 +46,14 @@
 					<a class="dropdown-item">
 						Ubah Password
 					</a>
-					<a class="dropdown-item">
+					<a class="dropdown-item" href="<?php echo base_url('logout');?>"> 
 						Log Out
+
 					</a>
 				</div>
 			</li>
 		</ul>
+		<?php endif; ?>
 		<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
 			<span class="icon-menu"></span>
 		</button>

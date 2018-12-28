@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Landing extends MY_Controller {
-
 	public function index()
 	{
 		$data['pluginjs'] = array(
@@ -14,6 +13,6 @@ class Landing extends MY_Controller {
 			'landing.js'
 		);
 
-		$this->template->layout('landing',$data);
+		$this->template->layout('admin/landing',$data);
 	}
 }
